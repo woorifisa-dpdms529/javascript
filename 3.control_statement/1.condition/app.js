@@ -11,20 +11,20 @@ const result = document.getElementById('result');
 console.log(result);
 
 // // 3. 셀렉트 박스가 값이 바뀐 것을 알려주면, 그때 처리할 로직(동작)
-// function setResult() {
-//     const choice = selectButton.value; // 셀렉트 박스에서 사용자가 선택한 값
+function setResult() {
+    const choice = selectButton.value; // 셀렉트 박스에서 사용자가 선택한 값
 
-//     if (choice === 'one') {
-//         console.log('착한 아이구나?');
-//         // 4. 가져온 result 변수에 문자열을 할당해서 화면에 출력
-//         result.textContent = '착한 아이구나?';
-//     } else if (choice === 'two') {
-//         result.textContent = '맞을래?'
-//     } else {
-//         result.textContent = '가만히 있어'
-//     }
-// }
+    if (choice === 'one') {
+        console.log('착한 아이구나?');
+        // 4. 가져온 result 변수에 문자열을 할당해서 화면에 출력
+        result.textContent = '착한 아이구나?';
+    } else if (choice === 'two') {
+        result.textContent = '맞을래?'
+    } else {
+        result.textContent = '가만히 있어'
+    }
+}
 
 
 // // 2. 셀렉트 박스에게 '너가 가지고 있는 선택지 중에 하나가 선택되면(선택지의 값을 바꾼 이벤트, change) 나한테 말좀 해줘'
-// selectButton.addEventListener('change', setResult);
+selectButton.addEventListener('change', setResult);
