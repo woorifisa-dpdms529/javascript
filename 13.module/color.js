@@ -1,0 +1,1 @@
+export const CI_COLOR = '#dfa1w2';
